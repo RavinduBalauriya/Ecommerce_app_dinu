@@ -37,43 +37,44 @@ A fully functional e-commerce platform built from scratch using the MERN stack (
         npm install
 
 3. **Environment Setup Create a .env file in the server folder:**
+
         PORT=5000
         MONGO_URI=your_mongodb_connection_string
         JWT_SECRET=your_secret_key
 
 4. **Run the App Open two terminals:**
-        Terminal 1 (Backend): cd server then npm run dev
 
+        Terminal 1 (Backend): cd server then npm run dev
         Terminal 2 (Frontend): cd client then npm run dev
 
 ## 📷 Screenshots
 
 ### Register page
-![Register Page](screenshots\register.JPG)
+![Register Page](screenshots/register.JPG)
 
 ### SignIn page
-![SignIn Page](screenshots\signIn.JPG)
+![SignIn Page](screenshots/signIn.JPG)
 
 ### Home Page
-![Home Page](screenshots\homepage.JPG)
+![Home Page](screenshots/homepage.JPG)
 
 ### Product Details
 ![Product Detail](screenshots/product-detail.png)
 
 ### Search Bar
-![Search Bar](screenshots\searchBar.JPG)
+![Search Bar](screenshots/searchBar.JPG)
 
 ### Shopping Cart
-![Shopping Cart](screenshots\cart.JPG)
+![Shopping Cart](screenshots/cart.JPG)
 
 ### AdminProductManager
-![Admin Product Manager](screenshots\AdminProductManager.JPG)
+![Admin Product Manager](screenshots/AdminProductManager.JPG)
 
 ### Edit Product
-![Edit Product](screenshots\editproduct.JPG)
+![Edit Product](screenshots/editproduct.JPG)
 
 ### Create Product
-![Edit Product](screenshots\editproduct.JPG)
+![Create Product](screenshots/createproduct.JPG)
 
 ### Admin Dashboard
-![Admin Dashboard](screenshots\admindashboard.JPG)
+![Admin Dashboard](screenshots/admindashboard.JPG)
