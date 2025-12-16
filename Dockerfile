@@ -1,21 +1,23 @@
-# 1. Base Image eka
+# 1. Base Image
 FROM node:18-alpine
 
-# 2. Container eka athule wada karana thana
+# 2. Working Directory
 WORKDIR /app
 
-# 3. Server folder eke thiyena package.json eka copy karagannawa
-# (Api eliye idan server folder eka athulata ebila balනවා)
+# 3. Copy package.json from server folder
 COPY server/package*.json ./
 
-# 4. Dependencies install karanawa
+# 4. Install Dependencies
 RUN npm install
 
-# 5. Server folder eke thiyena anith okkoma files tika copy karanawa
+# 5. Copy all server files
 COPY server/ .
 
-# 6. Port eka open karanawa (Godak wita meka 5000 wenne)
+# 6. Set Database Connection (MENNA ALUTH KOTASA)
+ENV MONGO_URI="mongodb+srv://ravindu:ravindu123@ecommerce.geytrzs.mongodb.net/ecommerce?appName=ecommerce"
+
+# 7. Expose Port
 EXPOSE 5000
 
-# 7. Server eka start karanawa
+# 8. Start Server
 CMD ["npm", "start"]
